@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="stylelogin.css">
+</head>
+<body>
+    <!-- Background halaman utama -->
+    <div class="background">
+        <img src="bg2.jpg" alt="Background" class="background-image">
+    </div>
+    
+    <!-- Konten Login -->
+    <div class="login-container">
+        <div class="login-box">
+            <!-- Close Button -->
+            <div class="close-btn" onclick="goToHome()">&times;</div>
+            
+            <!-- Logo -->
+            <div class="logo">
+                <img src="verified-icon.png" alt="Verified Icon" class="verified-icon">
+                <span class="design">Design</span><span class="shop">Shop</span>
+            </div>
+
+            <form class="login-form">
+                <input type="email" placeholder="Email" class="input-field" required>
+                <input type="password" placeholder="Password" class="input-field" required>
+                <button type="submit" class="btn primary-btn">Log In</button>
+                
+                <p class="separator">
+                    <span class="line"></span>
+                    or
+                    <span class="line"></span>
+                </p>
+
+                <button type="button" class="btn google-btn">
+                    <img src="logo-gogle.png" alt="Google" class="btn-icon"> Sign in with Google
+                </button>
+                <button type="button" class="btn apple-btn">
+                    <img src="apple.png" alt="Apple" class="btn-icon"> Sign in with Apple
+                </button>
+                <button type="button" class="btn secondary-btn">Sign In</button>
+            </form>
+            <a href="#" class="forgot-password">Forget Your Password?</a>
+        </div>
+    </div>
+
+    <script>
+        // Fungsi untuk mengarahkan ke halaman utama
+        function goToHome() {
+            window.location.href = "index.html"; // Ubah ke path halaman utama Anda
+        }
+    </script>
+</body>
+</html>

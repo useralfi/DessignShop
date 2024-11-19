@@ -1,0 +1,304 @@
+/* Navbar */
+.navbar {
+  padding: 1rem 1.5rem;
+}
+
+.nav-link {
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(0, 0, 0); /* Teks navbar default hitam */
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #007bff;
+}
+
+/* Search Bar di Navbar */
+.navbar .form-inline .input-group {
+  width: 400px; /* Perpanjang lebar search bar */
+}
+
+.navbar .form-inline .input-group .form-control {
+  border-radius: 25px 0 0 25px;
+}
+
+.navbar .form-inline .input-group .btn {
+  border-radius: 0 25px 25px 0;
+  background-color: #006efe;
+  color: white;
+  border: none;
+}
+
+.navbar .form-inline .input-group .btn:hover {
+  background-color: #0056b3;
+}
+
+/* Hero Section */
+#home h4 {
+  font-size: 3rem; /* Ukuran font responsif */
+  font-weight: bold;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.shadow-text {
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.shadow-btn {
+  margin-right: 15px; /* Memberi jarak antar tombol */
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.shadow-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.6);
+}
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Header Section */
+.header-section {
+  background-color: #E3E7EF; /* Sesuaikan dengan warna latar belakang */
+  padding: 20px;
+}
+
+.header-title {
+  font-size: 3rem; /* Perbesar ukuran font */
+  font-family: 'YourCustomFont', sans-serif; /* Gantilah dengan font yang sesuai */
+  color: red; /* Sesuaikan dengan warna merah pada desain Anda */
+}
+
+/* Content Cards */
+.card {
+  border: 1px solid #E3E7EF;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-body {
+  background-color: white;
+}
+
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background: #f4f4f4;
+}
+
+/* Section Intro */
+.intro-section {
+  background-color: #E3E7EF;
+  padding: 40px 20px;
+}
+
+.intro-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+/* Teks di bagian kiri */
+.intro-text {
+  max-width: 60%;
+ 
+}
+
+.intro-text h1 {
+  font-size: 3rem; /* Ukuran font diperbesar */
+  margin-bottom: 20px;
+  color: #000;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Efek shadow */
+}
+
+.intro-text p {
+  line-height: 1.6;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+/* Gambar di bagian kanan */
+.intro-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.main-image {
+  width: 300px; /* Ukuran gambar utama */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.small-images {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.small-image {
+  width: 145px; /* Setengah ukuran dari gambar utama */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Fitur Teks dan Gambar Baru */
+.custom-section {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  margin-top: 0px;
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.text-section {
+  flex: 1;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333333;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.image-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-section img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsivitas */
+@media screen and (max-width: 768px) {
+  .section {
+      flex-direction: column;
+  }
+
+  .text-section {
+      text-align: center;
+  }
+}
+
+/* Section Pelanggan */
+.customers-section {
+  text-align: center;
+  background: #E3E7EF;
+  padding: 30px 20px;
+}
+
+.customers-section h2 {
+  font-size: 1.8rem;
+  color: #ff0000;
+}
+
+/* Animasi Global */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hero Section Animasi */
+.hero-text {
+  animation: slideInFromLeft 1.5s ease-out;
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.hero-buttons {
+  animation: slideInFromBottom 1s ease-out 0.5s forwards;
+  opacity: 0;
+}
+
+@keyframes slideInFromBottom {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Card Animasi Hover */
+.card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Navbar Transisi */
+.navbar {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar.scrolled {
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Footer */
+footer {
+  font-size: 0.9rem;
+  background-color: #F5F5F5;
+  color: white;
+  padding: 1rem 0;
+}
